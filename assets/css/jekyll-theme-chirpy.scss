@@ -1,0 +1,196 @@
+/* ============================================
+   漸層深色風格 - Dark Gradient Style
+   https://new.3pm.lol/
+   ============================================ */
+
+body {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* 側邊欄 */
+#sidebar {
+  background: rgba(26, 26, 46, 0.95);
+  border: none;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.site-title {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #ffffff;
+}
+
+.site-subtitle {
+  color: #a0a0a0;
+}
+
+/* 內容區塊 */
+#main-wrapper {
+  background: rgba(27, 27, 46, 0.9);
+  backdrop-filter: blur(10px);
+  border: none;
+  box-shadow: 0 0 40px rgba(0,0,0,0.2);
+}
+
+/* 文章卡片 */
+.post-preview {
+  background: rgba(30, 30, 50, 0.8);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.post-preview:hover {
+  background: rgba(40, 40, 70, 0.9);
+  box-shadow: 0 4px 25px rgba(94, 158, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.post-meta, .text-muted {
+  color: #a0a0a0;
+  font-size: 0.875rem;
+}
+
+/* 連結 */
+a {
+  color: #93c5fd;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #bfdbfe;
+  border-bottom-color: #93c5fd;
+}
+
+/* 標題 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* 程式碼區塊 */
+.highlight, pre {
+  background: #0d0d1a;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 15px rgba(94, 158, 255, 0.1);
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: #e0e0e0;
+  background: rgba(255,255,255,0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+
+/* 區分線 */
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 按鈕 */
+.btn {
+  background: rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  color: #93c5fd;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: rgba(59, 130, 246, 0.5);
+  color: #ffffff;
+}
+
+/* 標籤與分類 */
+.tag, .category {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* 引用區塊 */
+blockquote {
+  border-left: 3px solid #3b82f6;
+  color: #d0d0d0;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 表格 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #e0e0e0;
+}
+
+th, td {
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 10px 15px;
+}
+
+th {
+  background: rgba(59, 130, 246, 0.2);
+  color: #93c5fd;
+}
+
+/* 滾動條 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 4px;
+}
+
+/* 響應式 */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+  }
+
+  .post-preview {
+    padding: 15px;
+    border-radius: 8px;
+  }
+}
+
+/* 頂部工具列 */
+#topbar {
+  background: rgba(26, 26, 46, 0.9);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+#breadcrumb, #topbar-title {
+  color: #a0a0a0;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #808080;
+}
+
+/* 滑動開關 */
+#mode-toggle {
+  color: #93c5fd;
+}
