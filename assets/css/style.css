@@ -1,160 +1,282 @@
-/* ============================================
-   簡約清新風格 - Clean Minimal Style
-   https://new.3pm.lol/
-   ============================================ */
+/* ==========================================================================
+   設計哲學流派 A：Information Architects (iA) - 極致專注與內容優先風格
+   https://ia.net/writer
+   ========================================================================== */
 
+/* --- 1. 全域排版與色彩基礎 --- */
 body {
-  background: #fafafa !important;
-  color: #333 !important;
+  background: #ffffff !important;
+  color: #1d1d1f !important; /* Apple-like 深灰，比純黑溫和、高對比 */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-#sidebar {
-  background: #ffffff !important;
-  border-right: 1px solid #e0e0e0 !important;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.05) !important;
-}
-
-#main-wrapper {
-  background: transparent !important;
-}
-
-#topbar-wrapper {
-  background: #ffffff !important;
-  border-bottom: 1px solid #e0e0e0 !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05) !important;
-}
-
-.card {
-  background: #ffffff !important;
-  border: 1px solid #e8e8e8 !important;
-  border-radius: 12px !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04) !important;
-  transition: transform 0.2s, box-shadow 0.2s !important;
-}
-
-.card:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08) !important;
-}
-
-.post-meta {
-  color: #888 !important;
-  font-size: 0.9em !important;
-}
-
+/* 點綴色與超連結：經典 iA 權威藍色 */
 a {
-  color: #2563eb !important;
+  color: #002fa7 !important; /* 國際克萊因藍 (IKB) 的網頁演繹 */
   text-decoration: none !important;
+  transition: color 0.15s ease, border-color 0.15s ease !important;
 }
 
 a:hover {
-  color: #1d4ed8 !important;
+  color: #001f70 !important;
   text-decoration: underline !important;
 }
 
-#panel-wrapper {
-  background: #ffffff !important;
-  border-left: 1px solid #e0e0e0 !important;
+/* 選取文字的背景色：iA 標誌性的淺藍色 */
+::selection {
+  background: rgba(0, 47, 167, 0.08) !important;
+  color: #002fa7 !important;
 }
 
-#tail-wrapper {
+/* --- 2. 側邊欄與導航 (Minimalist Sidebar) --- */
+#sidebar {
   background: #ffffff !important;
-  border-top: 1px solid #e0e0e0 !important;
+  border-right: 1px solid #f1f1f2 !important; /* 極細分界線，取代陰影 */
+  box-shadow: none !important;
 }
 
 .site-title {
-  color: #111 !important;
+  color: #000000 !important;
   font-weight: 700 !important;
   letter-spacing: -0.5px !important;
 }
 
 .site-subtitle {
-  color: #666 !important;
-  font-weight: 400 !important;
+  color: #86868b !important;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0px !important;
+  margin-top: 4px !important;
 }
 
+/* 側邊欄導航按鈕：文字加粗、移除厚重的背景色，改用極簡左側指示條 */
 .nav-link {
-  color: #555 !important;
+  color: #515154 !important;
   font-weight: 500 !important;
-  border-radius: 8px !important;
-  margin: 2px 0 !important;
-  padding: 8px 12px !important;
+  border-radius: 0px !important;
+  margin: 1px 0 !important;
+  padding: 8px 16px !important;
+  background: transparent !important;
+  border-left: 2px solid transparent !important;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+  transition: all 0.15s ease !important;
 }
 
 .nav-link:hover {
-  color: #2563eb !important;
-  background: #f0f4ff !important;
+  color: #000000 !important;
+  background: #f5f5f7 !important;
+  border-left-color: #d2d2d7 !important;
 }
 
 .nav-item.active .nav-link {
-  color: #2563eb !important;
-  background: #eef2ff !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+  border-left-color: #002fa7 !important; /* Active 狀態下以 IKB 藍色線條指示 */
+}
+
+/* 側邊欄頭像 */
+.avatar {
+  border: 1px solid #e2e2e7 !important;
+  box-shadow: none !important;
+  transition: transform 0.2s ease !important;
+}
+.avatar:hover {
+  transform: scale(1.02) !important;
+}
+
+/* --- 3. 頂部欄與搜尋 (Minimalist Topbar) --- */
+#topbar-wrapper {
+  background: #ffffff !important;
+  border-bottom: 1px solid #f1f1f2 !important;
+  box-shadow: none !important;
 }
 
 #search-input {
-  background: #f5f5f5 !important;
-  border: 1px solid #e0e0e0 !important;
-  border-radius: 8px !important;
-  color: #333 !important;
+  background: #f5f5f7 !important;
+  border: 1px solid transparent !important;
+  border-radius: 6px !important;
+  color: #1d1d1f !important;
+  font-family: "SFMono-Regular", Consolas, monospace !important;
+  font-size: 0.85rem !important;
+  transition: all 0.15s ease !important;
 }
 
 #search-input:focus {
   background: #ffffff !important;
-  border-color: #2563eb !important;
+  border-color: #002fa7 !important;
   outline: none !important;
+  box-shadow: 0 0 0 3px rgba(0, 47, 167, 0.05) !important;
 }
 
-#search-input::placeholder {
-  color: #999 !important;
+/* --- 4. 首頁文章列表 (Card-to-List Conversion) --- */
+/* 將 Chirpy 原生的卡片風格徹底重塑為極具人文質感、無邊框的排版清單 */
+.card {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #f1f1f2 !important; /* 用極細底線分隔 */
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  padding: 2.2rem 0 !important; /* 更慷慨的上下留白，拉開呼吸感 */
+  margin-bottom: 0px !important;
+  transition: none !important;
 }
 
-#mode-toggle {
-  color: #666 !important;
+.card:hover {
+  transform: none !important; /* 移除浮起動畫，回歸印刷品的沉靜感 */
+  box-shadow: none !important;
 }
 
-#mode-toggle:hover {
-  color: #2563eb !important;
+/* 文章標題 */
+.card h1 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+  margin-bottom: 0.6rem !important;
+  transition: color 0.15s ease !important;
+}
+
+.card:hover h1 {
+  color: #002fa7 !important; /* 懸停時標題變為 iA 藍色 */
+}
+
+/* 文章摘要文字 */
+.card p {
+  color: #515154 !important;
+  line-height: 1.6 !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 0.8rem !important;
+}
+
+/* 文章元數據 (Metadata) */
+.post-meta {
+  color: #86868b !important;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 0.8rem !important;
+  letter-spacing: -0.2px !important;
+}
+
+.post-meta a {
+  color: #86868b !important;
+}
+.post-meta a:hover {
+  color: #002fa7 !important;
+}
+
+/* --- 5. 文章詳細頁與閱讀寬度控制 --- */
+#main-wrapper {
+  background: #ffffff !important;
+}
+
+/* 核心防眼疲勞設計：將文章的最大寬度限制在最舒適的 680px */
+#post-wrapper {
+  max-width: 680px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1rem !important;
+}
+
+/* 文章內文排版 */
+.content {
+  line-height: 1.8 !important; /* 寬鬆的行高，適合長時間閱讀 */
+  font-size: 1.05rem !important; /* 微幅放大字級 */
+  color: #1d1d1f !important;
+}
+
+.content p {
+  margin-bottom: 1.6rem !important;
+}
+
+/* 標題階層 */
+h1, h2, h3, h4, h5, h6 {
+  color: #000000 !important;
+  font-weight: 600 !important;
+  margin-top: 2.2rem !important;
+  margin-bottom: 1rem !important;
+  letter-spacing: -0.3px !important;
+}
+
+h1 { font-size: 2rem !important; }
+h2 { font-size: 1.5rem !important; border-bottom: none !important; padding-bottom: 0 !important; }
+h3 { font-size: 1.25rem !important; }
+
+/* 區塊引言 (Blockquote) */
+blockquote {
+  border-left: 3px solid #002fa7 !important; /* 使用 iA 藍色作為左側引導線 */
+  background: #f5f5f7 !important;
+  color: #515154 !important;
+  font-style: italic !important;
+  padding: 1rem 1.5rem !important;
+  margin: 1.8rem 0 !important;
+  border-radius: 4px !important;
+}
+
+/* 行內程式碼與代碼塊 */
+code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-size: 0.88em !important;
+  background: #f5f5f7 !important;
+  color: #e03131 !important; /* 偏暗紅，醒目但不過於刺眼 */
+  padding: 0.2em 0.4em !important;
+  border-radius: 3px !important;
+}
+
+div.highlighter-rouge, pre {
+  background: #f5f5f7 !important;
+  border: 1px solid #e2e2e7 !important;
+  border-radius: 6px !important;
+}
+
+pre code {
+  color: inherit !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+/* --- 6. 右側面板與頁尾 (Minimalist Right Panel & Footer) --- */
+#panel-wrapper {
+  background: #ffffff !important;
+  border-left: 1px solid #f1f1f2 !important;
 }
 
 .panel-heading {
-  color: #111 !important;
+  color: #000000 !important;
+  font-family: "SFMono-Regular", Consolas, monospace !important;
   font-weight: 600 !important;
-  font-size: 0.95em !important;
-  text-transform: uppercase !important;
+  font-size: 0.8rem !important;
   letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
 }
 
-.content {
-  line-height: 1.7 !important;
+#tail-wrapper {
+  background: #ffffff !important;
+  border-top: 1px solid #f1f1f2 !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #111 !important;
-  font-weight: 600 !important;
-}
-
-/* 修正分頁導航連結 - older/newer */
+/* --- 7. 分頁導航 (Typographic Pagination) --- */
 .pagination .page-link {
-  color: #555 !important;
-  background: #fafafa !important;
-  border: 1px solid #d0d0d0 !important;
-  border-radius: 8px !important;
+  color: #515154 !important;
+  background: #ffffff !important;
+  border: 1px solid #e2e2e7 !important;
+  border-radius: 6px !important;
   padding: 8px 16px !important;
-  transition: background 0.2s, border-color 0.2s !important;
+  font-family: "SFMono-Regular", Consolas, monospace !important;
+  font-size: 0.85rem !important;
+  transition: all 0.15s ease !important;
 }
 
 .pagination a.page-link:hover,
 .pagination a.page-link:focus {
-  color: #333 !important;
-  background: #ffffff !important;
-  border-color: #999 !important;
+  color: #002fa7 !important;
+  background: #f5f5f7 !important;
+  border-color: #002fa7 !important;
   outline: none !important;
   box-shadow: none !important;
 }
 
 .pagination .page-item.disabled .page-link {
-  color: #999 !important;
-  background: #f5f5f5 !important;
-  border-color: #e0e0e0 !important;
+  color: #d2d2d7 !important;
+  background: #ffffff !important;
+  border-color: #e2e2e7 !important;
 }
