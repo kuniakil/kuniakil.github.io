@@ -1,7 +1,8 @@
 # 文章編輯指南
 
-## Repo 資訊
+## 網站資訊
 
+- **Live URL**: https://new.3pm.lol/
 - **Repo URL**: https://github.com/kuniakil/kuniakil.github.io
 - **Branch**: `main`
 - **靜態檔案目錄**: `assets/img/`
