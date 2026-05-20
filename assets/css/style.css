@@ -144,8 +144,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pagination .page-link:hover {
-  color: #ffffff !important;
-  background: #2563eb !important;
+  color: #1d4ed8 !important;
+  background: #ffffff !important;
   border-color: #2563eb !important;
   text-decoration: none !important;
 }
