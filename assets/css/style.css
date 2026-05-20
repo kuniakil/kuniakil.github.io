@@ -135,22 +135,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 修正分頁導航連結 - older/newer */
-.page-link {
-  color: #2563eb !important;
+.pagination .page-link {
+  color: #555 !important;
   background: #f0f4ff !important;
-  border: 1px solid #e0e0e0 !important;
+  border: 1px solid #d0d0d0 !important;
   border-radius: 8px !important;
   padding: 8px 16px !important;
 }
 
-.page-link:hover {
+.pagination .page-link:hover {
   color: #ffffff !important;
   background: #2563eb !important;
   border-color: #2563eb !important;
   text-decoration: none !important;
 }
 
-.page-item.disabled .page-link {
+.pagination .page-item.disabled .page-link {
   color: #999 !important;
   background: #f5f5f5 !important;
   border-color: #e0e0e0 !important;
