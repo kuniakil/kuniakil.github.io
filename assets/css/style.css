@@ -141,13 +141,16 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #d0d0d0 !important;
   border-radius: 8px !important;
   padding: 8px 16px !important;
+  transition: background 0.2s, border-color 0.2s !important;
 }
 
-.pagination a.page-link:hover {
+.pagination a.page-link:hover,
+.pagination a.page-link:focus {
   color: #333 !important;
   background: #ffffff !important;
   border-color: #999 !important;
-  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .pagination .page-item.disabled .page-link {
