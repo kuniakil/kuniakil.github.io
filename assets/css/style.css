@@ -150,6 +150,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none !important;
 }
 
+.pagination a.page-link:hover {
+  color: #1d4ed8 !important;
+  background: #ffffff !important;
+}
+
 .pagination .page-item.disabled .page-link {
   color: #999 !important;
   background: #f5f5f5 !important;
