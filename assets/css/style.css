@@ -3,31 +3,33 @@
    https://ia.net/writer
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 /* --- 1. 全域排版與色彩基礎 --- */
 body {
   background: #ffffff !important;
   color: #1d1d1f !important; /* Apple-like 深灰，比純黑溫和、高對比 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  font-family: "EB Garamond", Georgia, "Liberation Serif", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 點綴色與超連結：經典 iA 權威藍色 */
+/* 點綴色與超連結：優雅 iA 墨綠色 */
 a {
-  color: #002fa7 !important; /* 國際克萊因藍 (IKB) 的網頁演繹 */
+  color: #0ca678 !important; /* 墨綠色 (Emerald Green) */
   text-decoration: none !important;
   transition: color 0.15s ease, border-color 0.15s ease !important;
 }
 
 a:hover {
-  color: #001f70 !important;
+  color: #087f5b !important;
   text-decoration: underline !important;
 }
 
-/* 選取文字的背景色：iA 標誌性的淺藍色 */
+/* 選取文字的背景色：墨綠色半透明 */
 ::selection {
-  background: rgba(0, 47, 167, 0.08) !important;
-  color: #002fa7 !important;
+  background: rgba(12, 166, 120, 0.1) !important;
+  color: #0ca678 !important;
 }
 
 /* --- 2. 側邊欄與導航 (Minimalist Sidebar) --- */
@@ -35,6 +37,7 @@ a:hover {
   background: #ffffff !important;
   border-right: 1px solid #f1f1f2 !important; /* 極細分界線，取代陰影 */
   box-shadow: none !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 .site-title {
@@ -74,7 +77,7 @@ a:hover {
   color: #000000 !important;
   font-weight: 600 !important;
   background: transparent !important;
-  border-left-color: #002fa7 !important; /* Active 狀態下以 IKB 藍色線條指示 */
+  border-left-color: #0ca678 !important; /* Active 狀態下以墨綠色線條指示 */
 }
 
 /* 側邊欄頭像 */
@@ -106,9 +109,9 @@ a:hover {
 
 #search-input:focus {
   background: #ffffff !important;
-  border-color: #002fa7 !important;
+  border-color: #0ca678 !important;
   outline: none !important;
-  box-shadow: 0 0 0 3px rgba(0, 47, 167, 0.05) !important;
+  box-shadow: 0 0 0 3px rgba(12, 166, 120, 0.06) !important;
 }
 
 /* --- 4. 首頁文章列表 (Card-to-List Conversion) --- */
@@ -139,14 +142,14 @@ a:hover {
 }
 
 .card:hover h1 {
-  color: #002fa7 !important; /* 懸停時標題變為 iA 藍色 */
+  color: #0ca678 !important; /* 懸停時標題變為墨綠色 */
 }
 
 /* 文章摘要文字 */
 .card p {
   color: #515154 !important;
-  line-height: 1.6 !important;
-  font-size: 0.95rem !important;
+  line-height: 1.9 !important; /* 行高 1.9 */
+  font-size: 1.05rem !important; /* 字級 1.05rem */
   margin-bottom: 0.8rem !important;
 }
 
@@ -162,7 +165,7 @@ a:hover {
   color: #86868b !important;
 }
 .post-meta a:hover {
-  color: #002fa7 !important;
+  color: #0ca678 !important;
 }
 
 /* --- 5. 文章詳細頁與閱讀寬度控制 --- */
@@ -170,17 +173,20 @@ a:hover {
   background: #ffffff !important;
 }
 
-/* 核心防眼疲勞設計：將文章的最大寬度限制在最舒適的 680px */
-#post-wrapper {
-  max-width: 680px !important;
+/* 核心防眼疲勞設計：將文章與列表的最大寬度限制在 760px */
+#post-list, #post-wrapper {
+  max-width: 760px !important;
   margin: 0 auto !important;
+}
+
+#post-wrapper {
   padding: 2rem 1rem !important;
 }
 
 /* 文章內文排版 */
 .content {
-  line-height: 1.8 !important; /* 寬鬆的行高，適合長時間閱讀 */
-  font-size: 1.05rem !important; /* 微幅放大字級 */
+  line-height: 1.9 !important; /* 閱讀行高 1.9 */
+  font-size: 1.15rem !important; /* 正文字級 1.15rem */
   color: #1d1d1f !important;
 }
 
@@ -203,7 +209,7 @@ h3 { font-size: 1.25rem !important; }
 
 /* 區塊引言 (Blockquote) */
 blockquote {
-  border-left: 3px solid #002fa7 !important; /* 使用 iA 藍色作為左側引導線 */
+  border-left: 3px solid #0ca678 !important; /* 使用墨綠色作為左側引導線 */
   background: #f5f5f7 !important;
   color: #515154 !important;
   font-style: italic !important;
@@ -268,9 +274,9 @@ pre code {
 
 .pagination a.page-link:hover,
 .pagination a.page-link:focus {
-  color: #002fa7 !important;
+  color: #0ca678 !important;
   background: #f5f5f7 !important;
-  border-color: #002fa7 !important;
+  border-color: #0ca678 !important;
   outline: none !important;
   box-shadow: none !important;
 }
