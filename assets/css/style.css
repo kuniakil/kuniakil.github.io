@@ -1,0 +1,22 @@
+/* ============================================
+   極簡黑白風格 - Minimal Clean Style
+   https://new.3pm.lol/
+   ============================================ */
+
+/* 測試用 - 讓側邊欄變成紅色 */
+#sidebar {
+  background: #ff0000 !important;
+  border: 5px solid #ff6600 !important;
+}
+
+/* 測試用 - 讓內容區變成藍色 */
+#main-wrapper {
+  background: #0000ff !important;
+  border: 5px solid #00ff00 !important;
+}
+
+/* 測試用 - 讓 body 變成黃色 */
+body {
+  background: #ffff00 !important;
+  color: #000000 !important;
+}
