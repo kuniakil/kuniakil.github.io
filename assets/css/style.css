@@ -1,22 +1,88 @@
 /* ============================================
-   極簡黑白風格 - Minimal Clean Style
+   漸層暗色風格 - Dark Gradient Style
    https://new.3pm.lol/
    ============================================ */
 
-/* 測試用 - 讓側邊欄變成紅色 */
-#sidebar {
-  background: #ff0000 !important;
-  border: 5px solid #ff6600 !important;
-}
-
-/* 測試用 - 讓內容區變成藍色 */
-#main-wrapper {
-  background: #0000ff !important;
-  border: 5px solid #00ff00 !important;
-}
-
-/* 測試用 - 讓 body 變成黃色 */
 body {
-  background: #ffff00 !important;
-  color: #000000 !important;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-attachment: fixed;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+#sidebar {
+  background: linear-gradient(180deg, #0f0f1a 0%, #1a1a2e 100%) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+#main-wrapper {
+  background: transparent !important;
+}
+
+#topbar-wrapper {
+  background: rgba(15, 15, 26, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+.card {
+  background: rgba(26, 26, 46, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(5px);
+}
+
+.card:hover {
+  background: rgba(26, 26, 46, 0.9) !important;
+  border-color: rgba(100, 180, 255, 0.3) !important;
+}
+
+.post-meta {
+  color: #888 !important;
+}
+
+a {
+  color: #64b5f6 !important;
+}
+
+a:hover {
+  color: #90caf9 !important;
+}
+
+#panel-wrapper {
+  background: rgba(15, 15, 26, 0.6) !important;
+  backdrop-filter: blur(10px);
+}
+
+#tail-wrapper {
+  background: rgba(15, 15, 26, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+.site-title, .site-subtitle {
+  color: #e0e0e0 !important;
+}
+
+.nav-link {
+  color: #b0b0b0 !important;
+}
+
+.nav-link:hover {
+  color: #ffffff !important;
+}
+
+.nav-item.active .nav-link {
+  color: #64b5f6 !important;
+}
+
+#search-input {
+  background: rgba(26, 26, 46, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #e0e0e0 !important;
+}
+
+#search-input::placeholder {
+  color: #888 !important;
+}
+
+#mode-toggle {
+  color: #b0b0b0 !important;
 }
