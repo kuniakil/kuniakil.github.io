@@ -283,9 +283,11 @@ pre code {
 
 .pagination a.page-link:hover,
 .pagination a.page-link:focus,
-.pagination .page-item:not(.disabled) a:hover {
+.pagination .page-item:not(.disabled) a:hover,
+.pagination .page-item:not(.disabled) .page-link:hover {
   color: #0ca678 !important;
-  background: #f5f5f7 !important; /* 輕微灰底 */
+  background: transparent !important; /* 徹底拿掉藍底/灰底，回歸透明質感 */
+  background-color: transparent !important;
   border-color: #0ca678 !important;
   outline: none !important;
   box-shadow: none !important;
@@ -310,13 +312,23 @@ pre code {
   transition: all 0.15s ease !important;
 }
 
+/* 強制覆蓋所有 hover 狀態，徹底拿掉藍底，改為透明背景，高對比墨綠字 */
 .post-navigation a:hover,
 .post-navigation a:focus,
 .post-navigation .btn:hover,
-.post-navigation .btn:focus {
-  background: #f5f5f7 !important; /* 輕微灰底，不使用粗重的藍綠色背景 */
+.post-navigation .btn:focus,
+.post-navigation a.btn:hover,
+.post-navigation a.btn-outline-primary:hover {
+  background: transparent !important; /* 徹底拿掉藍底 */
+  background-color: transparent !important;
   color: #0ca678 !important; /* 墨綠色字 */
   border-color: #0ca678 !important;
   text-decoration: none !important;
   box-shadow: none !important;
+}
+
+/* 確保按鈕內部所有子元素（如標題和提示字）在懸停時也轉為高對比墨綠色，排除任何潛在藍色 */
+.post-navigation a:hover *,
+.post-navigation .btn:hover * {
+  color: #0ca678 !important;
 }
