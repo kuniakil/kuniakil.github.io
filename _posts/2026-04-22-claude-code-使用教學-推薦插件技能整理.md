@@ -2,7 +2,11 @@
 title: "Claude Code 使用教學 & 推薦插件技能整理"
 date: 2026-04-22 11:52:23 +0800
 categories:
+  - AI
 tags:
+  - Claude
+  - AI
+  - 工具
 ---
 
 📚 整理自 X (Twitter) 上最熱門的 Claude Code 使用教學貼文，涵蓋：系統化學習路線、創始人使用技巧、以及社群推薦的必裝 Plugins、Skills 與 MCP Servers。

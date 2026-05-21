@@ -2,7 +2,11 @@
 title: "Julian Goldie 的 Claude 實戰課程"
 date: 2026-04-07 18:25:10 +0800
 categories:
+  - AI
 tags:
+  - Claude
+  - AI
+  - 課程
 ---
 
 ## Claude 1小時大師課：全方位自動化教材
