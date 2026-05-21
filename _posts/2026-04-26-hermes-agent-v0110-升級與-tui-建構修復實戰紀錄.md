@@ -2,7 +2,9 @@
 title: "Hermes-Agent v0.11.0 升級與 TUI 建構修復實戰紀錄"
 date: 2026-04-26 09:21:00 +0800
 categories:
+  - AI
 tags:
+  - Hermes
 ---
 
 在 2026 年 4 月 25 日，我們完成了 Hermes-Agent 從 `v2026.4.16` 至 `v2026.4.23` (核心版本 v0.11.0) 的深度升級。本次升級的重點在於全新 React/Ink TUI 的適配，以及解決 GitHub Actions 多架構建構中的各種「雷區」。
