@@ -2,7 +2,11 @@
 title: "📚 Harness Engineering 兩本書精華整理"
 date: 2026-04-02 17:51:36 +0800
 categories:
+  - 閱讀
 tags:
+  - 閱讀
+  - 自我成長
+  - 精華
 ---
 
 ## 📖 第一本：Claude Code 設計指南

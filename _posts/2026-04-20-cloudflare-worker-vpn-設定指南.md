@@ -2,7 +2,12 @@
 title: "Cloudflare Worker VPN 設定指南"
 date: 2026-04-20 00:49:26 +0800
 categories:
+  - 網路
 tags:
+  - Cloudflare
+  - VPN
+  - 網路
+  - 部署
 ---
 
 基於 cmliu 專案，實現全球極速 CDN 轉送

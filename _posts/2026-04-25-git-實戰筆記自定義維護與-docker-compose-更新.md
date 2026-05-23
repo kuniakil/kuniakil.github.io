@@ -2,7 +2,12 @@
 title: "Git 實戰筆記：自定義維護與 Docker-Compose 更新"
 date: 2026-04-25 00:24:44 +0800
 categories:
+  - AI
 tags:
+  - Git
+  - Docker
+  - GitHub
+  - CI/CD
 ---
 
 這份筆記記錄了在維護 `hermes-agent` 自定義分支時的操作流程與背後的 Git 核心原理。
