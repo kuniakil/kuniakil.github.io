@@ -1,6 +1,6 @@
 ---
 title: "Docker Compose 到 K8s 遷移必踩的兩個「大坑」：啟動指令與網路暴露"
-date: 2026-05-29 09:30:00 +0800
+date: 2026-05-28 09:30:00 +0800
 categories:
   - Kubernetes
   - Migration
