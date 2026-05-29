@@ -1,6 +1,6 @@
 ---
 title: "GHCR (GitHub Container Registry) 操作風險說明"
-date: 2026-05-29 10:00:00 +0800
+date: 2026-05-28 10:00:00 +0800
 categories:
   - DevOps
   - Docker
