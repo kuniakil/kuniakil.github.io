@@ -56,7 +56,7 @@ tags:
 | 2.1 | 修「failed to request plugin daemon」每秒跳 | ✅ | 加 `dify-plugin-daemon` Deployment（commit `33390cc`） |
 | 2.2 | 修「Vector store type is not configured」 | ✅ | `VECTOR_STORE=pgvector` + Postgres 換成 `pgvector/pgvector:0.8.2-pg15`（commit `6c3c438`） |
 | 2.3 | 修 plugin-daemon 啟動 env 踩坑（3 次 crash） | ✅ | `SERVER_KEY` / `DB_HOST` / `PLUGIN_DAEMON_TCP_HOST=0.0.0.0` 等 |
-| 2.4 | 補 tenant RSA 私鑰（`PrivkeyNotFoundError`） | ✅ | 手動生成 keypair + 寫入 `/Users/mlee/dify-api-storage/privkeys/...`（修內 `/app/api/storage` 沒掛 hostPath）|
+| 2.4 | 補 tenant RSA 私鑰（`PrivkeyNotFoundError`） | ✅ | 手動生成 keypair + 寫入 `~/dify-data/api-storage/privkeys/...`（順便修 `/app/api/storage` 沒掛 hostPath）|
 | 2.5 | `/app/api/storage` 改 hostPath 持久化 | ✅ | commit `318923f`，未來重啟不丟私鑰 |
 | 2.6 | 升級 Dify 1.14 後 conversation schema 驗證失敗 | ✅ | 用 `jsonb_set` 補 3 個必填欄位（`annotation_reply` / `more_like_this` / `agent_mode.prompt`）|
 | 2.7 | MiniMax provider 安裝 + 填 API key | ✅ | plugin 從 marketplace 裝 |
@@ -123,8 +123,8 @@ tags:
 ### P2 — 系統強化
 
 - [ ] **備份策略**
-  - `dify-db`（`/Users/mlee/dify-db`）— `pg_dump` 排程
-  - `dify-api-storage/privkeys/`（**最關鍵**，沒這份 tenant 解密全炸）
+  - `~/dify-data/db`（PostgreSQL）— `pg_dump` 排程
+  - `~/dify-data/api-storage/privkeys/`（**最關鍵**，沒這份 tenant 解密全炸）
   - 還原演練至少做一次
 - [ ] **Secrets 管理**
   - 全部明文 env 不好——換成 K8s Secret 或 sealed-secrets
