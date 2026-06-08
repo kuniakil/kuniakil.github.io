@@ -2,5 +2,9 @@
   "raw/articles/caddy-ingress-migration-2026.md": {
     "sha256": "ecc30f535e82315ea6b5229848c1897788cf735adc6e22edfb23b5e69eb311d4",
     "postFileName": "2026-06-08-caddy-ingress-migration-2026.md"
+  },
+  "raw/articles/k8s-helm-cheat-sheet-2026.md": {
+    "sha256": "32a1433864d8a391e4fa4454ad130efa182372c4ebb0aea95f273178715cde9c",
+    "postFileName": "2026-06-08-k8s-helm-cheat-sheet-2026.md"
   }
 }
