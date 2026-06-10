@@ -14,5 +14,9 @@
   "concepts/cloudflare-warp-ssh-troubleshooting.md": {
     "sha256": "ad553c81b70baf1d7479ed6df5793cd03ea6bf29d15c2db5b49bd01c61444909",
     "postFileName": "2026-06-09-cloudflare-warp-ssh-troubleshooting.md"
+  },
+  "raw/articles/jelly-lab-guide-2026.md": {
+    "sha256": "17b3245e437f1d744f11469df2793c1aa8dfadab55af467fb86996fd2d2ed6b1",
+    "postFileName": "2026-06-10-jelly-lab-guide-2026.md"
   }
 }
