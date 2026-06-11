@@ -22,5 +22,9 @@
   "raw/articles/fzf-guide-2026.md": {
     "sha256": "73c60f7c7a3b8af0a427ac51d4a0f2f2e5ef74632974c4f43de39805ea65d984",
     "postFileName": "2026-06-10-fzf-guide-2026.md"
+  },
+  "raw/articles/powerlevel10k-guide-2026.md": {
+    "sha256": "0b3347814b9d0781d127e30bd8f03545920baed5c9d8eac2543af5202634e0ab",
+    "postFileName": "2026-06-10-powerlevel10k-guide-2026.md"
   }
 }
