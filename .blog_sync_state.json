@@ -18,5 +18,9 @@
   "raw/articles/jelly-lab-guide-2026.md": {
     "sha256": "17b3245e437f1d744f11469df2793c1aa8dfadab55af467fb86996fd2d2ed6b1",
     "postFileName": "2026-06-10-jelly-lab-guide-2026.md"
+  },
+  "raw/articles/fzf-guide-2026.md": {
+    "sha256": "73c60f7c7a3b8af0a427ac51d4a0f2f2e5ef74632974c4f43de39805ea65d984",
+    "postFileName": "2026-06-10-fzf-guide-2026.md"
   }
 }
