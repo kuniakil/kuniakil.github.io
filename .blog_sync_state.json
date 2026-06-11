@@ -26,5 +26,9 @@
   "raw/articles/powerlevel10k-guide-2026.md": {
     "sha256": "0b3347814b9d0781d127e30bd8f03545920baed5c9d8eac2543af5202634e0ab",
     "postFileName": "2026-06-10-powerlevel10k-guide-2026.md"
+  },
+  "raw/articles/helm-diff-guide-2026.md": {
+    "sha256": "b522de5ef97cb57bbaa557ce7a3ea74344b7071c1ec1e7be846dcaa2a7ad0944",
+    "postFileName": "2026-06-10-helm-diff-guide-2026.md"
   }
 }
