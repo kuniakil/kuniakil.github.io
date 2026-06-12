@@ -38,5 +38,9 @@
   "concepts/dify-jina-concurrency-limit-postmortem.md": {
     "sha256": "ae88ec521145c3667c9b2ffde148f8ca0672cb8c68d013ffe023d4d578499bbf",
     "postFileName": "2026-06-12-dify-jina-concurrency-limit-postmortem.md"
+  },
+  "concepts/traefik-migration.md": {
+    "sha256": "3d25ee6eb2298370b1340cb6f34eff9c31271513a4b3cb462e5ec83c4e542428",
+    "postFileName": "2026-06-12-traefik-migration.md"
   }
 }
