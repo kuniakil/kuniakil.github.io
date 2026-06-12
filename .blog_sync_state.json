@@ -30,5 +30,13 @@
   "raw/articles/helm-diff-guide-2026.md": {
     "sha256": "b522de5ef97cb57bbaa557ce7a3ea74344b7071c1ec1e7be846dcaa2a7ad0944",
     "postFileName": "2026-06-10-helm-diff-guide-2026.md"
+  },
+  "concepts/caddy-vs-traefik-tls-postmortem.md": {
+    "sha256": "300ad14abf48b10418327238dd12cb74daee11ab14396bbf7097b0a810c37025",
+    "postFileName": "2026-06-12-caddy-vs-traefik-tls-postmortem.md"
+  },
+  "concepts/dify-jina-concurrency-limit-postmortem.md": {
+    "sha256": "ae88ec521145c3667c9b2ffde148f8ca0672cb8c68d013ffe023d4d578499bbf",
+    "postFileName": "2026-06-12-dify-jina-concurrency-limit-postmortem.md"
   }
 }
